@@ -1,15 +1,9 @@
+/* Estilo para la card*/
 .custom-shadow {
   box-shadow: 2px 3px 8px #ffffff7a;
 }
 
-.table {
-  font-size: 0.75rem;
-}
-
-.text {
-  text-align: justify;
-}
-
+/* Estilos para la barra de navegación */
 .navbar-brand {
   position: relative;
   transition: color 0.3s ease;
@@ -28,4 +22,14 @@
 
 .navbar-brand:hover::after {
   width: 100%;
+}
+
+/* texto de la descripción */
+.text {
+  text-align: justify;
+}
+
+/* Estilo de la tabla */
+.table {
+  font-size: 0.75rem;
 }

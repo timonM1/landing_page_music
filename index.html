@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,34 +10,44 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style_index.css" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Compra tus tickets para el festival de música Vibrations Under the Stars. Vive una experiencia única con artistas internacionales."
+    />
+
+    <title>Vibrations Under the Stars</title>
   </head>
   <body class="bg-secondary">
-    <main class="container d-flex vh-100">
-      <section class="card bg-black my-auto p-5 custom-shadow">
+    <main class="container d-flex min-vh-100 my-3 my-lg-0">
+      <div class="card bg-black my-auto p-5 custom-shadow">
         <div class="row g-4">
+          <!-- Primera columna: Navegación y descripción del evento -->
           <div class="col-sm-12 col-md-6 col-xl-5">
+            <!-- Header con navegación principal -->
             <header>
               <nav class="navbar">
                 <div class="container-fluid d-flex justify-content-center py-2">
                   <a
                     class="navbar-brand text-white mx-3 fw-bold text-uppercase"
-                    href="#"
+                    href="https://timonm1.github.io/landing_page_music/"
+                    aria-label="Ir a la página principal"
                     >Home</a
                   >
                   <a
                     class="navbar-brand text-white mx-3 fw-bold text-uppercase"
                     href="tickets.html"
+                    aria-label="Ir a la página de Tickets"
                     >Tickets</a
                   >
                 </div>
               </nav>
             </header>
 
+            <!-- Descripción del evento -->
             <section class="text-light text-center my-3">
-              <h2 class="fs-2">Vibrations Under the Stars</h2>
-              <small
-                ><time datetime="">Sábado, 27 de abril de 2025 </time></small
+              <h2>Vibrations Under the Stars</h2>
+              <small class="fw-bold fs-5 text-danger"
+                ><time datetime="2025-04-27">27 - 04 - 2025 </time></small
               >
               <p class="text my-4">
                 Prepárate para una experiencia musical inolvidable en
@@ -51,25 +61,39 @@
               </p>
             </section>
 
+            <!-- Botón para adquirir tickets -->
             <div class="text-center my-3">
-              <button
+              <a
+                href="tickets.html"
                 class="btn btn-warning bg-warning fw-bold px-4 py-2 text-uppercase"
               >
-                Tickets
-              </button>
+                Compra
+              </a>
             </div>
           </div>
-          <div
+
+          <!-- Segunda columna: Imagen representativa del evento -->
+          <figure
             class="col-sm-12 col-md-6 col-xl-4 text-center align-content-center text-light"
           >
-            <img src="img/fondo.jpg" alt="" class="img-fluid" />
-            <div class="mt-3">
+            <img
+              src="img/fondo.jpg"
+              alt="Fotografía de un evento musical con una multitud bajo luces brillantes"
+              class="img-fluid d-none d-sm-block mx-auto"
+            />
+            <img
+              src="img/fondo_sm.jpg"
+              alt="Fotografía de un evento musical con una multitud bajo luces brillantes"
+              class="img-fluid d-block d-sm-none mx-auto"
+            />
+            <figcaption class="mt-3">
               Foto de
 
               <a
                 class="link-warning fw-bold text-decoration-none link-opacity-75-hover"
                 target="_blank"
                 href="https://unsplash.com/es/@yvettedewit?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                rel="noopener noreferrer"
                 >Yvette de Wit</a
               >
               en
@@ -77,11 +101,14 @@
                 class="link-warning fw-bold text-decoration-none link-opacity-75-hover"
                 target="_blank"
                 href="https://unsplash.com/es/fotos/evento-musical-multitudinario-con-luces-Kcx_YuUR-dw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                rel="noopener noreferrer"
                 >Unsplash</a
               >
-            </div>
-          </div>
-          <div
+            </figcaption>
+          </figure>
+
+          <!-- Tercera columna: Tabla de artistas y horarios -->
+          <aside
             class="col-sm-12 col-md-12 col-xl-3 text-center align-content-center"
           >
             <table
@@ -100,30 +127,30 @@
               </thead>
               <tbody class="table-group-divider">
                 <tr>
-                  <th>Echo Reverie</th>
+                  <th scope="row">Echo Reverie</th>
                   <td>18:00 - 19:00</td>
                 </tr>
                 <tr>
-                  <td>Pulse Phoenix</td>
+                  <th scope="row">Pulse Phoenix</th>
                   <td>19:30 - 20:30</td>
                 </tr>
                 <tr>
-                  <td>Crimson Skyline</td>
+                  <th scope="row">Crimson Skyline</th>
                   <td>21:00 - 22:00</td>
                 </tr>
                 <tr>
-                  <th>Luna Nr</th>
+                  <th scope="row">Luna Nr</th>
                   <td>22:30 - 23:30</td>
                 </tr>
                 <tr>
-                  <th>Soul Strikers</th>
+                  <th scope="row">Soul Strikers</th>
                   <td>00:00 - 01:30</td>
                 </tr>
               </tbody>
             </table>
-          </div>
+          </aside>
         </div>
-      </section>
+      </div>
     </main>
 
     <script
