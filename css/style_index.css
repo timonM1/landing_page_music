@@ -1,0 +1,31 @@
+.custom-shadow {
+  box-shadow: 2px 3px 8px #ffffff7a;
+}
+
+.table {
+  font-size: 0.75rem;
+}
+
+.text {
+  text-align: justify;
+}
+
+.navbar-brand {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+}

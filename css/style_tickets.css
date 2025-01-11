@@ -1,0 +1,7 @@
+.custom-shadow {
+  box-shadow: 2px 3px 8px #ffffff7a;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
+}
